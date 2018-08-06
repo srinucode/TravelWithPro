@@ -5,13 +5,16 @@
   margin-bottom: 98px;
   
  
-@mixim atLarge{
+@mixin atLarge{
    margin-bottom:0px;
    padding:0 1.8125rem 1px 1.8125rem;
 
   }
 
+&--lastitem{
 
+  margin-bottom: 0;
+}
   &__photo{
 
      border-radius: 80px;
