@@ -9,7 +9,7 @@ webpack(require('../../webpack.config.js'), function(err, stats){
 
     	console.log(err.toString());
     }
-	console.log(stats);
+	/*console.log(stats);*/
 	callback();
 });
 
