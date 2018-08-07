@@ -1287,9 +1287,14 @@ instead edit gulp/template/sprite*/
 @media (min-width: 800px) {
 
 .site-header{
-
+         position:fixed;
 		background-color: rgba(47,85,114,0.3)
 }
+
+		.site-header--dark{
+
+			background-color: rgba(23,51,72,.85);
+		}
 	}
 
 @media (min-width: 800px) {
