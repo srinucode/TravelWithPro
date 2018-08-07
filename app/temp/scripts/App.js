@@ -11116,7 +11116,7 @@ var _modal2 = _interopRequireDefault(_modal);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
-new _revealOnScroll2.default((0, _jquery2.default)(".feature-items"), "85%");
+new _revealOnScroll2.default((0, _jquery2.default)(".feature-items"), "65%");
 new _revealOnScroll2.default((0, _jquery2.default)(".testimonial"), "60%");
 
 var stickyHeaderObj = new _stickyHeader2.default();
@@ -11275,6 +11275,7 @@ var StickyHeader = function () {
   function StickyHeader() {
     _classCallCheck(this, StickyHeader);
 
+    this.lazyloadImages = (0, _jquery2.default)(".lazyload");
     this.siteHeader = (0, _jquery2.default)(".site-header");
     this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title");
     this.createHeaderWaypoint();
@@ -11285,6 +11286,15 @@ var StickyHeader = function () {
   }
 
   _createClass(StickyHeader, [{
+    key: 'refreshWaypoints',
+    value: function refreshWaypoints() {
+
+      this.lazyloadImages.on('load', function () {
+
+        Waypoint.refreshAll();
+      });
+    }
+  }, {
     key: 'addSmoothScrolling',
     value: function addSmoothScrolling() {
 
@@ -11325,7 +11335,7 @@ var StickyHeader = function () {
               (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
             }
           },
-          offset: "40%"
+          offset: "30%"
         });
         new Waypoint({
           element: currentPageSection,
