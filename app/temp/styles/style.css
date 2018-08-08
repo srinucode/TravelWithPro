@@ -922,7 +922,7 @@ margin-right: -100px;
 
 @media (min-width: 800px) {
 
-.row--equal-height-at-medium{
+.flexbox .row--equal-height-at-medium{
 
 	display: -webkit-box;
 
@@ -933,7 +933,7 @@ margin-right: -100px;
 }
 
 
-	.row--equal-height-at-medium > div{
+	.flexbox .row--equal-height-at-medium > div{
 
 		float:none;
 		display: -webkit-box;
@@ -944,7 +944,7 @@ margin-right: -100px;
 
 @media (min-width: 1020px) {
 
-.row--equal-height-at-large{
+.flexbox .row--equal-height-at-large{
 
 	display: -webkit-box;
 
@@ -955,7 +955,7 @@ margin-right: -100px;
 }
 
 
-	.row--equal-height-at-large > div{
+	.flexbox .row--equal-height-at-large > div{
 
 		float:none;
 		display: -webkit-box;
@@ -1155,6 +1155,12 @@ instead edit gulp/template/sprite*/
 .icon{
 
 	background-image:url('/assets/images/sprite/sprite-69f19c2e.svg');
+	
+	}
+
+.no-svg .icon{
+
+		background-image:url('/assets/images/sprite/sprite-69f19c2e.png');
 	
 	}
 

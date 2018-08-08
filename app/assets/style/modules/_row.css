@@ -119,7 +119,7 @@ margin-right: -100px;
 
 /* css for equal height of column*/
 
-&--equal-height-at-medium{
+.flexbox &--equal-height-at-medium{
 
 @mixin atMedium{
 
@@ -134,7 +134,7 @@ margin-right: -100px;
 }
 
 }	
-&--equal-height-at-large{
+.flexbox &--equal-height-at-large{
 
 @mixin atLarge{
 
